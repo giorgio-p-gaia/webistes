@@ -216,18 +216,18 @@ main { display: block; }
 .tags li:hover { border-color: var(--accent); color: var(--accent); }
 
 /* ---------- Research cards ---------- */
-.cards { display: grid; gap: 1rem; grid-template-columns: 1fr; }
-@media (min-width: 720px) { .cards { grid-template-columns: repeat(3, 1fr); } }
+.cards { display: grid; gap: 2rem; grid-template-columns: 1fr; }
+@media (min-width: 720px) { .cards { grid-template-columns: repeat(3, 1fr); gap: 2.4rem; } }
 .card {
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  padding: 1.4rem 1.3rem;
-  transition: border-color .25s ease, transform .25s ease;
+  border-top: 1px solid var(--ink);
+  padding-top: .9rem;
 }
-.card:hover { border-color: var(--accent); transform: translateY(-3px); }
-.card__title { font-size: 1.05rem; margin: 0 0 .6rem; letter-spacing: -0.01em; }
-.card__body { color: var(--ink-soft); font-size: .95rem; margin: 0; }
+.card__title {
+  font-size: 1.02rem; margin: 0 0 .55rem; letter-spacing: -0.01em;
+  transition: color .2s ease;
+}
+.card:hover .card__title { color: var(--accent); }
+.card__body { color: var(--ink-soft); font-size: .94rem; margin: 0; }
 
 /* ---------- Publications ---------- */
 .pub-group {
