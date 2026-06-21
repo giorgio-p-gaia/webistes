@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://giorgiopapitto.eu/sitemap.xml
+Sitemap: https://www.giorgiopapitto.eu/sitemap.xml
